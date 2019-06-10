@@ -1,0 +1,314 @@
+/*style sheet for ZigZag Client Site
+
+/* -------- color guide ----------
+#3c6b92 : main blue
+#6acce2 : light blue
+#2c566a : teal accent
+#193742 : dark blue
+#e1d8b9 : sand accent
+#cb7d20 : orange accent
+#51341a : brown
+#995522 : dark orange (used for links or high contrast accents)
+#cb202a : red accent (this color does not encode well, use only for small accents)
+#896287 : purple
+*/
+
+/* to jump to a specific section search for the unique character pair at the front of each TOC section 
+	<<<tip, highlight the special character and use the shortcut for Find Selection Cntr/Cmd + Shift + G >> */
+
+/* ----- Style sheet TOC ----------------
+			
+
+			^*.Global Constants.
+			^0.Common Classes.
+			^1.CONATINER
+			^2.HEADER
+				^2.1.SOIAL 
+				^2.2.NAAGATION 
+			^3.SLIDER
+			^4.PROMO 
+				^4.1.SIGELE PROMOS 
+			^5.FEATURED
+				^5.1.FEATURD IMAGES 
+			^6.FOOTERTOP
+				^6.1.FOOERTOP BLOGROLLS 
+				^6.2.FOOERTOP LATESTPOSTS 
+			^7.FOOTER 
+				^7.1.FOOT COPYRIGHT
+				^7.2.FOOTER CONTACT 
+------------------------------------------------*/
+/* ---------------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+
+/*-------------------------------------------------------------------------
+---------------------------^*.- 'Global Constants ----------------------------
+--------------------------------------------------------------------------*/
+
+*,ul,h1,h3,h4,h5,h6{
+	margin: 0;
+	padding: 0;
+}
+
+h2{
+	margin: 20px 0;
+}
+
+body{
+	font-family: sans-serif;
+	color: white;
+	background: url(img/bgtxure.jpg);
+}
+
+
+ul{
+	list-style: none;
+}
+
+a{
+	text-decoration: none;
+	color: white;
+}
+
+/*0-------------------------------------------------------------------------
+---------------------------^0.- 'Common Classes ----------------------------
+--------------------------------------------------------------------------*/
+
+.structure{
+	width: 960px;
+	margin: auto;
+}
+
+.fix{
+	overflow: hidden;
+}
+
+.floatleft, ul li{
+	float: left;
+}
+
+.floatright{
+	float: right;
+}
+
+#alpha{
+	margin-left: 0;
+	padding-left: 0;
+}
+
+#omega{
+	margin-right: 0;
+	padding-right: 0;
+}
+
+/*c -------------------------------------------------------------------------
+----------------------     ^c - 'COMMON STYLS  ----------------------
+--------------------------------------------------------------------------*/
+
+.zz,
+.zzprotop,
+.zzprobot,
+.zzfeatbot{
+	height: 7px;
+}
+
+/*2-------------------------------------------------------------------------
+---------------------------^2.- 'HEADER SECTION ----------------------------
+--------------------------------------------------------------------------*/
+
+header{
+	background: #33a6b2;
+}
+
+.header{
+
+}
+
+.header h1{
+	margin: 30px;
+}
+
+.zz{
+	background: url(img/zzhead.png) repeat-x;
+}
+
+/*  ^2.1.SOCIAL
+ ---------------------------------------------------------*/
+.social{
+	margin-top: 20px;
+}
+
+.social li,
+nav li{
+	margin-left: 10px;
+}
+
+/*  ^2.2.NAVAGATION.
+ ---------------------------------------------------------*/
+nav{
+	margin-left: 320px;
+	margin-top: 10px;
+
+}
+
+nav a{
+	height: 50px;
+	padding: 10px;
+	border-radius: 5px;
+	margin-bottom: 10px;
+
+}
+
+nav a:hover, #selected{
+	background: url(img/er.png) ;
+	color: black;
+
+}
+
+/*3 -------------------------------------------------------------------------
+-----------------------     ^3. 'SLIDER section     -----------------------
+--------------------------------------------------------------------------*/
+
+.slider_area{
+
+}
+
+.slider img{
+	margin: 20px 0px;
+}
+
+/*4 -------------------------------------------------------------------------
+----------------------     ^4. 'PROMO section      ----------------------
+--------------------------------------------------------------------------*/
+.zzprotop{
+	background: url(img/zzprotop.png);
+}
+
+.zzprobot{
+	background: url(img/zzprobot.png);
+}
+
+.promo_area{
+	background: #9AC836;
+}
+
+.promo{
+
+}
+
+.promo h2{
+	padding-left: 40px;
+	margin: 0;
+
+}
+
+.promo div{
+	width: 200px;
+	padding: 25px;
+	background: url(img/featbdr.jpg) no-repeat left center;
+}
+
+.promo .single_promo_one{
+	background: none;
+}
+
+.single_promo_one h2{
+	background: none;
+	background: url(img/pro.png) no-repeat;
+}
+
+.single_promo_two h2{
+	background: url(img/pro2.png) no-repeat;
+}
+
+.single_promo_three h2{
+	background: url(img/pro3.png) no-repeat;
+}
+
+.single_promo_four h2{
+	background: url(img/pro4.png) no-repeat;
+}
+
+
+/*5 -------------------------------------------------------------------------
+----------------------     ^5 - 'FEATURED section     ----------------------
+--------------------------------------------------------------------------*/
+
+.featured_area{
+	background: #19747D;
+}
+
+.featured_img{
+	margin-bottom: 30px;
+}
+
+.featured_img img{
+	border: 5px solid white;
+	margin-left: 30px;
+}
+
+.zzfeatbot{
+	background: url(img/zzfeatbot.png);
+}
+
+/*6 -------------------------------------------------------------------------
+----------------------     ^6.- 'FOOTERTOP section     ----------------------
+--------------------------------------------------------------------------*/
+
+.footertop_area{
+	padding-bottom: 20px;
+	border-bottom: 1px solid #C6C6C6;
+}
+
+.footertop *{
+	color: black;
+}
+
+
+.blogroll{
+	margin-left: 70px;
+}
+
+.blogroll ul{
+
+}
+
+.blogroll li{
+	float: none;
+	background: url(img/list.png) no-repeat left center;
+	border-bottom: 1px dotted #666;
+	padding: 5px 50px 5px 5px;
+}
+
+.blogroll li a{
+	padding-left: 12px;
+}
+
+.latest_posts img{
+	border: 5px solid white;
+	box-shadow: 0px 0px 3px #666;
+	margin-left: 10px;
+}
+
+.latest_posts img:last-child{
+	margin-right: 20px;
+}
+		
+/*7 -------------------------------------------------------------------------
+----------------------     ^7.- 'FOOTER section     ----------------------
+--------------------------------------------------------------------------*/
+
+footer{
+	background: #E3E3E3;
+}
+
+.footer{
+	color: #727272;
+}
+
+.copyright, .contact{
+	padding: 20px 0;
+}
+
+.contact{
+
+}

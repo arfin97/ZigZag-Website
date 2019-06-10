@@ -1,0 +1,180 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>jQuery Events 101</title>
+	<link rel=" tylesheet" href="day.css structure fix">
+</head>
+<body>
+	<h1>My Website</h1>
+	<button data-arfin="day" >Day</button>
+	<button data-arfin="night" >Night</button>
+	
+	<script src="jquery-2.1.1.js" ></script>
+	<script>
+
+	(function(){
+		$("button").click(function(){
+			var text = $(this).text().toLowerCase();
+			console.log(text);
+			$("link").attr("href", text + ".css");
+		});
+	})(); 
+
+	</script>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>ZigZag</title>
+	<link rel="stylesheet" href="style.css">
+	<!-- TABLE OF CONTENTS 
+	1.CONATINER
+	2.HEADER
+		2.1.SOIAL 
+		2.2.NAAGATION 
+	3.SLIDER
+	4.PROMO 
+		4.1.SIGELE PROMOS 
+	5.FEATURED
+		5.1.FEATURD IMAGES 
+	6.FOOTERTOP
+		6.1.FOOERTOP BLOGROLLS 
+		6.2.FOOERTOP LATESTPOSTS 
+	7.FOOTER 
+		7.1.FOOT COPYRIGHT
+		7.2.FOOTER CONTACT 
+-->
+</head>
+<body>
+<!-- 1.CONATINER -->
+	<div class="container">
+		<!-- 2.HEADER -->
+		<header class="fix">
+			<div class="header structure fix">
+				<h1 class="floatleft" >Actinumize</h1>
+				<!-- 2.1.SOCIAL -->
+				<div class="social floatright fix">
+					<ul>
+						<li><img src="img/facebook.png" alt=""></li>
+						<li><img src="img/facebook.png" alt=""></li>
+						<li><img src="img/facebook.png" alt=""></li>
+						<li><img src="img/facebook.png" alt=""></li>
+						<li><img src="img/facebook.png" alt=""></li>
+					</ul>
+				</div>
+				<!-- 2.2.NAVAGATION -->
+				<nav class="floatright">
+					<ul>
+						<li><a href=# id="selected">Home</a></li>
+						<li><a href=#>About</a></li>
+						<li><a href=#>Serevices</a></li>
+						<li><a href=#>Contact</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header><!--= Header ended -->
+<div class="zz"></div>
+		
+		<!-- 3.SLIDER -->
+		<div class=" slider_area fix">
+			<div class=" slider structure fix">
+				<img src="img/sld.jpg" alt="slider">
+			</div>
+		</div>
+
+		<!-- 4.PROMO -->
+<div class="zzprotop"></div>
+		<div class="promo_area fix">
+			<div class="promo structure fix">
+				<!-- 4.1.SIGLEPROMOS -->
+				<div class="single_promo_one floatleft" id='alpha'>
+					<h2>About</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta </p>
+				</div>
+				<div class="single_promo_two floatleft">
+					<h2>Elements</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta </p>
+				</div>
+				<div class="single_promo_three floatleft">
+					<h2>Analytics</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta </p>
+				</div>
+				<div class="single_promo_four floatleft" id='omega'>
+					<h2>Contact</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta </p>
+				</div>
+			</div>
+		</div>
+<div class="zzprobot"></div>
+		<!-- 5.FEATURED -->
+		<div class="featured_area fix">
+			<div class=" featured structure fix">
+				<!-- 5.1.FEATURED IMAGES -->
+				<h2>Featured</h2>
+				<div class="featured_img">
+					<img src="img/feat.jpg" alt="featured" id='alpha'>
+					<img src="img/feat.jpg" alt="featured">
+					<img src="img/feat.jpg" alt="featured">
+					<img src="img/feat.jpg" alt="featured">
+					<img src="img/feat.jpg" alt="featured" id='omega'>
+				</div>
+			</div>
+		</div>
+<div class="zzfeatbot"></div>
+		
+		<!-- 6.FOOTERTOP -->
+		<div class="footertop_area fix">
+			<div class=" footertop structure fix">
+				<!-- 6.1.FOOTERTOP BLOGROLLS -->
+				<div class="blogroll floatleft" id='alpha'>
+					<h2>Featured</h2>
+					<ul>
+						<li><a href=#>futility</a></li>
+						<li><a href=#>edict</a></li>
+						<li><a href=#>aritrocats</a></li>
+						<li><a href=#>cronies</a></li>
+						<li><a href=#>glutiny</a></li>
+					</ul>
+				</div>
+				<div class="blogroll floatleft">
+					<h2>Featured</h2>
+					<ul>
+						<li><a href=#>futility</a></li>
+						<li><a href=#>edict</a></li>
+						<li><a href=#>aritrocats</a></li>
+						<li><a href=#>cronies</a></li>
+						<li><a href=#>glutiny</a></li>
+					</ul>
+				</div>
+				<!-- 6.2.FOOTERTOP LATESTPOSTS -->
+				<div class="latest_posts floatright">
+					<h2>Featured</h2>
+					<img src="img/ltst.jpg" alt="">
+					<img src="img/ltst.jpg" alt="">
+					<img src="img/ltst.jpg" alt="">
+				</div>
+			</div>
+		</div>
+		
+		<!-- 7.FOOTER -->
+		<footer class="fix">
+			<div class=" footer structure fix">
+				<!-- 7.1.FOOTER COPYRIGHT -->
+				<div class="copyright fix floatleft">
+					<p>&copy this blog belongs to me</p>
+				</div>
+				<!-- 7.2.FOOTER CONTACT -->
+				<div class="contact fix floatright">
+					<p>&copy this blog belongs to me</p>
+				</div>
+			</div>
+		</footer>
+
+	</div><!-- container end -->
+</body>
+</html>
+
